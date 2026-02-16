@@ -193,10 +193,15 @@ main > p {
 .game-card h3 {
   color: var(--accent-cyan);
   padding: 1.5rem 1.5rem 0.75rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   transition: all 0.3s ease;
   flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
 }
 
 .game-card p {
@@ -320,8 +325,10 @@ footer p {
   }
 
   .game-card h3 {
-    font-size: 1.2rem;
-  }
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Mobile Responsive (480px and below) */
@@ -377,9 +384,11 @@ footer p {
   }
 
   .game-card h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 1rem 1rem 0.5rem;
-  }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
   .game-card p {
     padding: 0.5rem 1rem 1rem;
