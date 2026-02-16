@@ -179,59 +179,6 @@ main > p {
   backdrop-filter: blur(10px);
 }
 
-.game-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.3), 0 12px 35px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(255, 255, 255, 0.15);
-  background: rgba(102, 41, 95, 0.6);
-}
-
-.game-card.featured {
-  border: 3px solid var(--accent-magenta);
-  box-shadow: 0 0 10px rgba(214, 143, 214, 0.6), 0 0 20px rgba(214, 143, 214, 0.3), 0 8px 35px rgba(214, 143, 214, 0.3), inset 0 0 30px rgba(214, 143, 214, 0.1);
-  background: rgba(102, 41, 95, 0.5);
-}
-
-.game-card.featured:hover {
-  box-shadow: 0 0 10px rgba(214, 143, 214, 0.6), 0 0 20px rgba(214, 143, 214, 0.3), 0 12px 40px rgba(214, 143, 214, 0.4), inset 0 0 40px rgba(214, 143, 214, 0.2);
-  border-color: var(--accent-cyan);
-}
-
-.game-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid var(--primary);
-}
-
-.game-card:hover img {
-  filter: brightness(1.2) contrast(1.1);
-  border-bottom-color: var(--accent-cyan);
-}
-
-.game-card h3 {
-  color: var(--accent-cyan);
-  padding: 1.5rem 1.5rem 0.75rem;
-  font-size: 1.4rem;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-  transition: all 0.3s ease;
-}
-
-.game-card:hover h3 {
-  color: var(--accent-magenta);
-  text-shadow: 0 0 12px rgba(214, 143, 214, 0.8), 0 0 8px rgba(255, 255, 255, 0.4);
-}
-
-.game-card p {
-  padding: 0 1.5rem 1.5rem;
-  color: var(--text-light);
-  font-size: 0.95rem;
-  flex-grow: 1;
-  line-height: 1.7;
-}
-
 .btn-external {
   display: inline-block;
   margin: 0 1.5rem 1.5rem;
@@ -253,8 +200,9 @@ main > p {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(214, 143, 214, 0.3));
   color: var(--accent-magenta);
   border-color: var(--accent-magenta);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.3), inset 0 0 25px rgba(255, 255, 255, 0.2);
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.3), 0 12px 35px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(255, 255, 255, 0.15);
+  text-shadow: 0 0 12px rgba(214, 143, 214, 0.8), 0 0 8px rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
 }
 
 .btn-external::after {
