@@ -8,14 +8,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <a href="index.html" class="nav-logo">
+          <img src="images/kehnkore.png" alt="Kehn Kore Logo" class="logo-img">
+        </a>
+        <div class="nav-title">Contact</div>
+        <label for="nav-toggle" class="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item portfolio-nav"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
