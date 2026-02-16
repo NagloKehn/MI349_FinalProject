@@ -389,17 +389,15 @@ main > section p {
 
 /* Footer */
 footer {
-  background-color: rgba(102, 41, 95, 0.7);
+  background-color: rgba(102, 41, 95, 1);
   color: var(--text-light);
   text-align: center;
   padding: 2.5rem;
   margin-top: 4rem;
   border-top: 2px solid var(--accent-cyan);
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  left: 0;
-  right: 0;
   z-index: 50;
 }
 
