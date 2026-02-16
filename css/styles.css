@@ -329,12 +329,38 @@ footer p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .game-card img {
+    height: 200px;
+  }
+
+  .game-card p {
+    padding: 0.5rem 1.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .btn-external {
+    margin: 0 1rem 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 2rem;
+    font-size: 0.95rem;
+  }
 }
 
 /* Mobile Responsive (480px and below) */
 @media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
   .navbar {
     padding: 1rem;
+    gap: 1rem;
   }
 
   .nav-brand {
@@ -344,39 +370,51 @@ footer p {
 
   .nav-menu {
     gap: 0;
+    width: 100%;
   }
 
   .nav-link {
     padding: 0.85rem 0.75rem;
     font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   main {
     padding: 0 1rem;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
+    max-width: 100%;
   }
 
   main h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    line-height: 1.3;
   }
 
   main > p {
     font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Portfolio Section */
+  .portfolio {
+    margin: 2rem 0;
+  }
+
+  .portfolio h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
   }
 
   .portfolio-grid {
     grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .portfolio h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
   }
 
   .game-card {
     border-radius: 10px;
+    height: auto;
   }
 
   .game-card img {
@@ -384,29 +422,101 @@ footer p {
   }
 
   .game-card h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 1rem 1rem 0.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1.3;
+  }
 
   .game-card p {
     padding: 0.5rem 1rem 1rem;
     font-size: 0.85rem;
+    line-height: 1.5;
   }
 
   .btn-external {
-    margin: 0 1rem 1rem;
-    padding: 0.7rem 1.2rem;
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    padding: 0.75rem 1rem;
     font-size: 0.85rem;
+    line-height: 1.4;
   }
 
+  /* Footer */
   footer {
-    padding: 1.5rem;
-    font-size: 0.9rem;
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  footer p {
+    margin: 0;
+    padding: 0;
   }
 
   .nav-item.portfolio-nav {
     width: 100%;
+  }
+}
+
+/* Extra Small Screens (380px and below) */
+@media (max-width: 380px) {
+  html {
+    font-size: 13px;
+  }
+
+  .navbar {
+    padding: 0.75rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .nav-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 0 0.75rem;
+  }
+
+  main h1 {
+    font-size: 1.3rem;
+  }
+
+  main > p {
+    font-size: 0.9rem;
+  }
+
+  .portfolio h2 {
+    font-size: 1.3rem;
+  }
+
+  .game-card h3 {
+    font-size: 0.9rem;
+    padding: 0.75rem 0.75rem 0.5rem;
+  }
+
+  .game-card p {
+    padding: 0.4rem 0.75rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .btn-external {
+    margin: 0.75rem;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  footer {
+    padding: 1rem 0.75rem;
+    font-size: 0.8rem;
   }
 }
