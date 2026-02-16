@@ -396,8 +396,10 @@ footer {
   margin-top: 4rem;
   border-top: 2px solid var(--accent-cyan);
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
 }
 
